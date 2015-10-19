@@ -1,0 +1,15 @@
+{
+  "name": "nodesubpub",
+  "version": "1.0.0",
+  "description": "bi directional sub-pub in node.js",
+  "main": "app.js",
+  "dependencies": {
+    "socket.io": "^1.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
