@@ -1,3 +1,6 @@
+//node.js socket.io server
+
+
 
 var application_root = __dirname;
 var express = require("express");
@@ -21,7 +24,20 @@ console.log("app started");
 io.on('connection', function(socket){
   console.log('a user connected');
   io.sockets.emit('message', "client, thank you for connecting");
+
+
+  //DONT THINK BELOW IS FUNCTIONING
+  socket.on('message', function(message){
+    console.log('message from client: ' + message);
+  });  
 });
+
+
+
+
+
+
+
 
 
 //start server
