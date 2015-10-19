@@ -21,12 +21,13 @@ io.set('log level', 1);
 
 console.log("app started");
 
+//a single client connects
 io.on('connection', function(socket){
   console.log('a user connected');
   io.sockets.emit('message', "client, thank you for connecting");
 
 
-  //DONT THINK BELOW IS FUNCTIONING
+  //responds to client message
   socket.on('message', function(message){
     console.log('message from client: ' + message);
   });  
